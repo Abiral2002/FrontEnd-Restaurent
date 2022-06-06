@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Items</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./styles/global.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header-class">
+        <img src="./images/logo.png" />
+    </div>
+
+    <div id="container" class="products-container">
+        
+    </div>
+
+    <div class="cart-screen">
+        <button id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+        <div class="cart-container" id="cart-container">
+        </div>
+
+        <!-- Cart footer -->
+
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <div>
+                    <p>Food Orderes.</p>
+                    <p>Food Tax. 12%</p>
+                    <p>Total Amount</p>
+                </div>
+                <div>
+                    <p>Rs.<span id="ordered-amount"> 0</span></p>
+                    <p>Rs.<span id="tax-amount"> 0</span></p>
+                    <p>Rs.<span id="total-amount">0</span></p>
+                </div>
+            </div>
+                <div class="place-order">
+                    <button class="add-cart">Place Order</button>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="footer">
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+<script src="./scripts//index.js" defer></script>
+</html>
