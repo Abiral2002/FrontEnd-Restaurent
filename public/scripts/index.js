@@ -75,16 +75,54 @@ let category=[['Momo Category',
                 price:"500"
             }
         ]
-        ]]
+        ],['Chicken Category',
+        [
+            {
+            id:6,
+            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
+            name:"Chicken",
+            type:"Jhol Momo",
+            price:"500"
+        },
+        {
+            id:7,
+            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
+            name:"Chicken Momo",
+            type:"Jhol Momo",
+            price:"500"
+        },
+        {
+            id:8,
+            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
+            name:"Chicken Momo",
+            type:"Jhol Momo",
+            price:"500"
+        },
+        {
+            id:9,
+            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
+            name:"Chicken Momo",
+            type:"Jhol Momo",
+            price:"500"
+        },
+        {
+            id:10,
+            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
+            name:"Chicken Momo",
+            type:"Jhol Momo",
+            price:"500"
+        }
+    ]
+    ]]
 
 document.querySelector("#close-cart").addEventListener('click',()=>{
-    document.querySelector("#container").style.display="block"
-    document.querySelector(".cart-screen").style.transform="scaleY(0)"
+    document.querySelector(".app").style.display="flex"
+    document.querySelector(".cart-screen").style.display="none"
 })
 
 document.querySelector(".cart-icon").addEventListener('click',()=>{
-    document.querySelector(".cart-screen").style.transform="scaleY(1)"
-    document.querySelector("#container").style.display="none"
+    document.querySelector(".cart-screen").style.display="flex"
+    document.querySelector(".app").style.display="none"
 })
 
 const findItem=(id)=>{
@@ -98,6 +136,32 @@ const findItem=(id)=>{
 }
 
 
+function alterPopup(message){
+    // let popup=document.querySelector("#popup")
+    // if(previousNode!=='add'){
+    //     document.querySelector('body').removeChild(previousNode)
+    //     return
+    // }
+    // let popup=document.createElement("div")
+    // popup.setAttribute("id","popup")
+    // document.querySelector('body').append(popup)
+    // let p=document.createElement("p")
+    // popup.appendChild(p)
+    // let button=document.createElement("button")
+    // button.innerHTML='<i class="fa-solid fa-xmark"></i>'
+    // button.addEventListener('click',(e)=>alterPopup())
+    // popup.appendChild(button)
+    const popup=document.querySelector("#popup")
+    if(!message){
+        popup.childNodes[1].innerHTML=""
+        popup.style.display='none'
+        return
+    }
+    popup.childNodes[1].innerHTML=message
+    popup.style.display='flex'
+    // setTimeout(()=>alterPopup(''),5000)
+}
+
 
 function TempleteEng(text,data)
 {
@@ -110,7 +174,13 @@ function TempleteEng(text,data)
 }
 
 function sendOrder() { 
-    console.log(cart)
+    if (cart[0]==undefined){
+        alterPopup("Order Not Valid")
+        return
+    }
+    alterPopup("Order placed")
+    cart=[]
+    renderCart()
  }
 
 
@@ -120,7 +190,7 @@ function alterStock(e,id){
         return data.id==id
     })
     cart[index].quantity=cart[index].quantity+alter
-    if(cart[index].quantity < 0)cart[index].quantity=0
+    if(cart[index].quantity <= 0)cart[index].quantity=1
     renderCart(cart)
 
 }
@@ -129,6 +199,10 @@ function alterStock(e,id){
 
 function renderCart(cart){
     const cartContainer=$("#cart-container")
+    if(!cart){
+        cartContainer.html('')
+        return
+    }
     cartContainer.html('')
     cart.forEach(products=>{
         cartContainer.html((index,content)=>content+TempleteEng(cartCard,{
@@ -148,9 +222,14 @@ function renderCart(cart){
 }
 
 function addToCart(e){
+
+    if(cart.find(data=>data.id==e.parentNode.id)){
+        alterPopup("Item present inside cart !")
+        return
+    }
+    console
     cart.push(findItem(e.parentNode.id))
     renderCart(cart)
-    
 }
 
 function removeCart(e){
@@ -159,6 +238,7 @@ function removeCart(e){
     })
     renderCart(cart)
 }
+
 
 const foodCard=
                     `
