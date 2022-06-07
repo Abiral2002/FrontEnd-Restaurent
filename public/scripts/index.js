@@ -1,116 +1,116 @@
 let cart=[]
-let category=[['Momo Category',
+let category=[['Momo',
             [
                 {
                 id:1,
-                photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
+                photo:"https://comicoscafe.com/wp-content/uploads/2022/01/chicken-jhol-momo.jpg",
                 name:"Chicken Momo",
                 type:"Jhol Momo",
-                price:"500"
+                price:"200"
             },
             {
                 id:2,
-                photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-                name:"Chicken Momo",
-                type:"Jhol Momo",
-                price:"500"
+                photo:"https://comicoscafe.com/wp-content/uploads/2022/01/chicken-jhol-momo.jpg",
+                name:"Chiken Momo",
+                type:"C Momo",
+                price:"4100"
             },
             {
                 id:3,
-                photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-                name:"Chicken Momo",
+                photo:"https://comicoscafe.com/wp-content/uploads/2022/01/chicken-jhol-momo.jpg",
+                name:"Buff Momo",
                 type:"Jhol Momo",
-                price:"500"
+                price:"250"
             },
             {
                 id:4,
-                photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-                name:"Chicken Momo",
-                type:"Jhol Momo",
-                price:"500"
+                photo:"https://comicoscafe.com/wp-content/uploads/2022/01/chicken-jhol-momo.jpg",
+                name:"Buff Momo",
+                type:"C Momo",
+                price:"300"
             },
             {
                 id:5,
-                photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
+                photo:"https://comicoscafe.com/wp-content/uploads/2022/01/chicken-jhol-momo.jpg",
                 name:"Chicken Momo",
                 type:"Jhol Momo",
                 price:"500"
             }
         ]
-        ],['Chicken Category',
+        ],['Burger',
             [
                 {
                 id:6,
                 photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-                name:"Chicken",
-                type:"Jhol Momo",
+                name:"Chicken Cheese Burger",
+                type:"Cheese",
                 price:"500"
             },
             {
                 id:7,
                 photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-                name:"Chicken Momo",
-                type:"Jhol Momo",
-                price:"500"
+                name:"Chicken Burger",
+                type:"No cheese",
+                price:"400"
             },
             {
                 id:8,
                 photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-                name:"Chicken Momo",
-                type:"Jhol Momo",
-                price:"500"
+                name:"Veg Burger",
+                type:"With cheese",
+                price:"300"
             },
             {
                 id:9,
                 photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-                name:"Chicken Momo",
-                type:"Jhol Momo",
-                price:"500"
+                name:"Burger",
+                type:"Original",
+                price:"200"
             },
             {
                 id:10,
                 photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-                name:"Chicken Momo",
-                type:"Jhol Momo",
-                price:"500"
+                name:"Beef Burger",
+                type:"With cheese",
+                price:"600"
             }
         ]
-        ],['Chicken Category',
+        ],['Chicken',
         [
             {
-            id:6,
-            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
+            id:11,
+            photo:"https://www.seriouseats.com/thmb/LJQ1jFVrlJbSb23MmK5iwHUr_EY=/1500x1125/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2015__07__20210324-SouthernFriedChicken-Andrew-Janjigian-21-cea1fe39234844638018b15259cabdc2.jpg",
+            name:"Roasted Chicken",
+            type:"Chicken",
+            price:"200"
+        },
+        {
+            id:12,
+            photo:"https://static.toiimg.com/thumb/53007558.cms?width=1200&height=900",
+            name:"Grilled Chicken",
+            type:"Grilled",
+            price:"1000"
+        },
+        {
+            id:13,
+            photo:"https://www.eatwell101.com/wp-content/uploads/2020/02/chicken-soup-recipe-3.jpg",
+            name:"Chicken Soup",
+            type:"Soup",
+            price:"500"
+        },
+        {
+            id:14,
+            photo:"https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/61fe96e9-4826-4ab8-880e-eac0c8038cf3/Derivates/ac114672-02c3-40e7-a0d4-fc547abb1a8e.jpg",
             name:"Chicken",
-            type:"Jhol Momo",
+            type:"None",
             price:"500"
         },
         {
-            id:7,
-            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-            name:"Chicken Momo",
-            type:"Jhol Momo",
-            price:"500"
-        },
-        {
-            id:8,
-            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-            name:"Chicken Momo",
-            type:"Jhol Momo",
-            price:"500"
-        },
-        {
-            id:9,
-            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-            name:"Chicken Momo",
-            type:"Jhol Momo",
-            price:"500"
-        },
-        {
-            id:10,
-            photo:"https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=",
-            name:"Chicken Momo",
-            type:"Jhol Momo",
-            price:"500"
+            id:15,
+            photo:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2011%2F02%2F15%2F0886_192302_DuPree_MR_13299-2000.jpg&q=60",
+            name:"Chicken 2",
+            type:"Jhol",
+            price:"700"
         }
     ]
     ]]
@@ -137,20 +137,6 @@ const findItem=(id)=>{
 
 
 function alterPopup(message){
-    // let popup=document.querySelector("#popup")
-    // if(previousNode!=='add'){
-    //     document.querySelector('body').removeChild(previousNode)
-    //     return
-    // }
-    // let popup=document.createElement("div")
-    // popup.setAttribute("id","popup")
-    // document.querySelector('body').append(popup)
-    // let p=document.createElement("p")
-    // popup.appendChild(p)
-    // let button=document.createElement("button")
-    // button.innerHTML='<i class="fa-solid fa-xmark"></i>'
-    // button.addEventListener('click',(e)=>alterPopup())
-    // popup.appendChild(button)
     const popup=document.querySelector("#popup")
     if(!message){
         popup.childNodes[1].innerHTML=""
@@ -159,7 +145,6 @@ function alterPopup(message){
     }
     popup.childNodes[1].innerHTML=message
     popup.style.display='flex'
-    // setTimeout(()=>alterPopup(''),5000)
 }
 
 
@@ -201,6 +186,9 @@ function renderCart(cart){
     const cartContainer=$("#cart-container")
     if(!cart){
         cartContainer.html('')
+        $('#ordered-amount').text(0)
+        $('#tax-amount').text(0)
+        $('#total-amount').text(0)
         return
     }
     cartContainer.html('')
